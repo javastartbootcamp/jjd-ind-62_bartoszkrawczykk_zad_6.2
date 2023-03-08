@@ -10,15 +10,17 @@ public class Main {
         int tmp = sc.nextInt();
         System.out.println("Wprowadź 5 liczb:");
 
-        int [] numbers = new int[tmp];
+        int[] numbers = new int[tmp];
 
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = sc.nextInt();
         }
 
-        for (int suma : numbers) {
-            System.out.println("Suma kwadratów wprowadzonych liczb to " + suma);
+        int sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];
+
+        for (int i = 0; i < numbers.length; i++) {
+            sum = sum + 5;
         }
-        sc.close();
+        System.out.println("Suma kwadratów wprowadzonych liczb to " + sum);
     }
 }
