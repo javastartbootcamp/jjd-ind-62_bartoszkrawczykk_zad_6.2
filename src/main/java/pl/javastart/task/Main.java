@@ -17,9 +17,9 @@ public class Main {
         }
 
         int sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];
-
-        for (int i = 0; i < numbers.length; i++) {
-            sum = sum + 5;
+        for (int i = 1; i < numbers.length; i++) {
+            sum = (numbers[0] * numbers[0]) + (numbers[1] * numbers[1]) + (numbers[2] * numbers[2]) +
+                    (numbers[3] * numbers[3] + (numbers[4] * numbers[4]));
         }
         System.out.println("Suma kwadratów wprowadzonych liczb to " + sum);
     }
